@@ -1,0 +1,117 @@
+.box {
+    width: 150px;
+    height: 150px;
+    list-style: none;
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.box:hover {
+    cursor: grab;
+}
+
+.editBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 2px;
+}
+
+.editBox input {
+    border-radius: 5px;
+}
+.saveBox {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 15px 0px;
+}
+
+.saveBox button {
+    padding: 8px 10px 5px 10px;
+    border: none;
+    border-radius: 5px;
+    border: 0.5px solid rgb(226, 226, 226);
+    width: 50px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.sticker {
+    font-family: 'Inter', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.stickText p {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    margin: 8px 0px;
+    text-align: center;
+}
+
+.stickText span {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    font-size: 0.7em;
+}
+
+.stickBtn, .saveBox {
+    margin-top: 10px;
+
+    display: flex;
+    margin: 10px auto;
+}
+
+.stickBtn button, .saveBox button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px 5px;
+    padding: 2px 8px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.editBtn img, .deleteBtn img, .saveBtn img, .cancelBtn img {
+    width: 75%;
+    filter: brightness(0) saturate(100%);
+    margin: 1px auto;
+}
+
+.editBtn span, .deleteBtn span, .saveBtn span, .cancelBtn span {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.editBtn, .deleteBtn, .saveBtn, .cancelBtn {
+    transition: border-radius 0.5s, background-color 0.5s;
+}
+
+.editBtn:hover, .saveBtn:hover {
+    border-radius: 20%;
+    background-color: #f3e8cd;
+    cursor: pointer;
+}
+
+.deleteBtn:hover, .cancelBtn:hover {
+    border-radius: 20%;
+    background-color: #f7868c;
+    cursor: pointer;
+}

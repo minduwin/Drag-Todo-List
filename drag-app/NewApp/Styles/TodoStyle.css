@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todoHead {
+    background-image: url('./src/assets/marek.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+}
+
+.sideNav {
+    width: 65px;
+    height: 100vh;
+    border-radius: 5px;
+    overflow: hidden;
+
+    background-color: #264653;
+    position: relative;
+    transition: width 0.3s ease;
+}
+
+.sideNav.toggle {
+    width: 200px;
+}
+
+.openToggle:hover {
+    cursor: pointer;
+}
+
+.openToggle {
+    display: flex;
+    align-items: center;
+    margin: 10px 12px;
+}
+
+.openToggle img {
+    margin-left: 2px;
+
+    background: #48839a50;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.openToggle p {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+}
+
+.todoComponent {
+    width: 80%;
+}
+
+.titleHead h1 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.titleHead p {
+    text-align: center;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+.addTask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px auto;
+    max-width: 720px;
+}
+
+.mainInput input {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(204, 204, 204);
+}
+
+.secondInput input {
+    padding: 3px 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+}
+
+.secondInput button {
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(226, 226, 226);
+    font-size: 1em;
+    background-color: #596e79;
+    color: #fffefe;
+    cursor: pointer;
+}
+
+.mainDisplay {
+    max-width: 720px;
+    margin: 10px auto;
+}
+
+.gridTodo {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-items: center;
+    align-items: center;
+}

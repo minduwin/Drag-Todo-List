@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+    font-family: 'Lato', sans-serif;
+}
+
+.sideIcons {
+    padding: 0px 10px;
+    margin: 10px 5px;
+}
+
+.controlIcons {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.controlIcons img, .accIcon img {
+    margin-right: 30px;
+    background: #48839a50;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.controlIcons img:hover {
+    cursor: pointer;
+}
+
+.controlIcons p, .accIcon p {
+    color: #c9c9c9;
+}
+
+.accIcon {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 10px 15px;
+}
